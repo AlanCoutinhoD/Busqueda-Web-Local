@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="mx">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="buscar.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center><h1>BUSQUEDA</h1></center>
+  
+      <link rel="stylesheet" href="styles.css">
+      <div class="contenedor">
+        <div class="contenedorHojo">
+          <input name="valor" id="valor">
+          <select class="valor" name="opciones" id="columna">
+            <option value="1">clave</option>
+            <option value="2">nombre</option>
+            <option value="3">correo</option>
+            <option value="4">telefono</option>
+          </select>
+          <button onclick="buscar()">BUSCAR</button>
+        </div>
+      </div>
+
+    <div id="tableContainer"></div>
+</body>
+</html>
